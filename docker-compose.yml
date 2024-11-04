@@ -1,10 +1,19 @@
-version: "3.8"
-
 services:
-  app:
+  frontend-dev:
+    container_name: frontend-dev-container
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: frontend_container
+      context: ./frontend
+      dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
+    environment:
+      NODE_ENV: development
+      WATCHPACK_POLLING: true
+    volumes:
+      - ./frontend:/app/frontend
+      - front_node_modules:/app/frontend/node_modules
+    env_file:
+      - ./frontend/.env
+
+volumes:
+  front_node_modules:
