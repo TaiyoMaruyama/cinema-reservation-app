@@ -16,6 +16,9 @@ Next.js
 **インフラ**<br>
 Docker
 
+**その他**<br>
+Biome
+
 
 ## やりたいこと
 
