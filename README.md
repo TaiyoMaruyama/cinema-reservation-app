@@ -1,4 +1,6 @@
 # cinema-reservation-app
+### 完成イメージ
+![cinema_reservation_ui](https://github.com/user-attachments/assets/687ff2e7-2375-43bd-b2fd-3aa6fd6877e9)
 
 ## アプリ概要
 
