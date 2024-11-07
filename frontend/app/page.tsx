@@ -1,6 +1,6 @@
-import SeatButton from '@/components/reservation/SeatButton'
+import Room from '@/components/reservation/Room'
 
 const HOME = () => {
-  return <SeatButton />
+  return <Room />
 }
 export default HOME

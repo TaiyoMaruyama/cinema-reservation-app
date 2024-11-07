@@ -13,8 +13,8 @@ const buttonVariants = cva(
         true: 'bg-primary',
         false: '',
       },
-      disabled: {
-        true: 'border-none hover:opacity-0 text-translate',
+      reserved: {
+        true: 'bg-primary opacity-60 pointer-events-none',
         false: '',
       },
     },
@@ -27,7 +27,7 @@ export interface SeatButtonComponentProps
   asChild?: boolean
   label: string
   selected?: boolean
-  disabled?: boolean
+  reserved: boolean
 }
 
 const SeatButtonComponent = React.forwardRef<
@@ -41,6 +41,7 @@ const SeatButtonComponent = React.forwardRef<
       label,
       selected = false,
       disabled = false,
+      reserved = false,
       ...props
     },
     ref,
@@ -50,7 +51,7 @@ const SeatButtonComponent = React.forwardRef<
       <div className={seatButtonSize}>
         {!disabled ? (
           <Comp
-            className={cn(buttonVariants({ className, selected, disabled }))}
+            className={cn(buttonVariants({ className, selected, reserved }))}
             ref={ref}
             {...props}
           >
