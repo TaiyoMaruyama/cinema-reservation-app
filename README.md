@@ -19,7 +19,7 @@ Next.js
 Docker
 
 **その他**<br>
-Biome
+Biome, husky, tailwind css
 
 
 ## やりたいこと
