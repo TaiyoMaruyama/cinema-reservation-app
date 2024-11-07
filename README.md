@@ -13,7 +13,7 @@
 Next.js, Shadcn
 
 **バックエンド**<br>
-Next.js
+Nest.js
 
 **インフラ**<br>
 Docker
