@@ -1,4 +1,9 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd ./frontend && npm run biome
+
+# フロントエンドに対してBiomeを実行
+npm run biome
+
+# Typescripの型チェック
+cd frontend && npm run tsc 
