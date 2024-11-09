@@ -35,10 +35,10 @@ Biome, husky, tailwind css
 任意のディレクトリで、以下のコマンドを実行。
 ```sh
 git clone https://github.com/TaiyoMaruyama/cinema-reservation-app.git
-cd cinema-reservation-app/frontend
+cd cinema-reservation-app
 npm ci
 npm run prepare
 
-cd ../backend
+cd frontend
 npm ci
 ```

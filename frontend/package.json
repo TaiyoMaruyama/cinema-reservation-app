@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "tsc": "tsc",
-    "prepare": "husky init"
+    "tsc": "tsc"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.2",
