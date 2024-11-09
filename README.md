@@ -37,6 +37,7 @@ Biome, husky, tailwind css
 git clone https://github.com/TaiyoMaruyama/cinema-reservation-app.git
 cd cinema-reservation-app/frontend
 npm ci
+npm run prepare
 
 cd ../backend
 npm ci
