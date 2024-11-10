@@ -1,3 +1,4 @@
+import Header from '@/components/header/Header'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ja'>
-      <body>{children}</body>
+      <body className='w-full'>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
