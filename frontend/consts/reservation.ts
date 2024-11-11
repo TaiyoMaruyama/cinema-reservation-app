@@ -1,5 +1,3 @@
-export const seatButtonSize = 'w-6 h-6 m-0.5'
-
 // 16までの数字を動的に生成
 export const demoColumnList: number[] = Array.from(
   { length: 18 },

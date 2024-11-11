@@ -17,7 +17,7 @@ const RowSeats = () => {
             )}
             {demoColumnList.map((column) => (
               <ColumnSeats
-                key={column}
+                key={`${alphabet}-${column}`}
                 alphabet={alphabet}
                 index={column}
                 passagePoint={passagePoint}

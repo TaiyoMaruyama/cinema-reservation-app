@@ -4,7 +4,8 @@
     "husky": "^9.1.6"
   },
   "scripts": {
-    "biome" : "biome check --write .",
+    "biome" : "biome check",
+    "biome:write" : "biome check --write .",
     "prepare": "husky"
   }
 }

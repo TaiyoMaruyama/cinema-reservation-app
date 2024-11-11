@@ -2,7 +2,6 @@ import { Slot } from '@radix-ui/react-slot'
 import { type VariantProps, cva } from 'class-variance-authority'
 import * as React from 'react'
 
-import { seatButtonSize } from '@/consts/reservation'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
@@ -48,7 +47,7 @@ const SeatButtonComponent = React.forwardRef<
   ) => {
     const Comp = asChild ? Slot : 'button'
     return (
-      <div className={seatButtonSize}>
+      <div className='w-6 h-6 m-0.5'>
         {!disabled ? (
           <Comp
             className={cn(buttonVariants({ className, selected, reserved }))}
@@ -67,9 +66,7 @@ const SeatButtonComponent = React.forwardRef<
 SeatButtonComponent.displayName = 'Button'
 
 const SeatBlankComponent: React.FC<{ alpha?: string }> = ({ alpha = '' }) => {
-  return (
-    <div className={`${seatButtonSize} text-center  text-white`}>{alpha}</div>
-  )
+  return <div className='w-6 h-6 m-0.5 text-center text-white'>{alpha}</div>
 }
 
 export { SeatBlankComponent, SeatButtonComponent, buttonVariants }
