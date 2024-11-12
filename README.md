@@ -38,7 +38,4 @@ git clone https://github.com/TaiyoMaruyama/cinema-reservation-app.git
 cd cinema-reservation-app
 npm ci
 npm run prepare
-
-cd frontend
-npm ci
 ```
