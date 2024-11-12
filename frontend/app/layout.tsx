@@ -14,14 +14,14 @@ export default function RootLayout({
       <head>
         <meta name='description' content={metadata.description || ''} />
       </head>
-      <body className='w-full'>
+      <body className='w-full flex flex-col items-center'>
         <Header
           handleSidebarOpen={() => alert('open')}
           headerTitle={String(metadata.title) || ''}
           userName='MT'
           setUserName={() => alert('setName')}
         />
-        {children}
+        <div className='max-w-6xl w-full px-4 mx-auto'>{children}</div>
       </body>
     </html>
   )
