@@ -1,6 +1,7 @@
 'use client'
 
 import { demoColumnList } from '@/consts/reservation'
+import { useEffect, useState } from 'react'
 import TextLabel from '../gadgets/TextLabel'
 import MoviesSlider from './MoviesSlider'
 
@@ -9,6 +10,24 @@ const SliderBox: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 }
 
 const TopPage = () => {
+  // 状態を管理するための useState を追加
+  const [loading, setLoading] = useState<boolean>(true)
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      try {
+        const response = await fetch('/api/v1/showing-movies')
+        const data = await response.json()
+        setLoading(false)
+      } catch (error) {
+        console.error('Error fetching movies:', error)
+        setLoading(false)
+      }
+    }
+
+    fetchMovies()
+  }, [])
+
   return (
     <div className='container'>
       <SliderBox>
