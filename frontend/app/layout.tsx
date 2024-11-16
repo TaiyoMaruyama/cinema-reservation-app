@@ -1,6 +1,7 @@
 'use client'
 
-import Header from '@/components/header/Header'
+import Footer from '@/components/layout/Footer'
+import Header from '@/components/layout/Header'
 import { metadata } from '@/consts/meta'
 import './globals.css'
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           setUserName={() => alert('setName')}
         />
         <div className='max-w-6xl w-full px-4 mx-auto'>{children}</div>
+        <Footer />
       </body>
     </html>
   )
