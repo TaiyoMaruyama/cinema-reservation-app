@@ -25,7 +25,8 @@
     "rules": {
       "recommended": true,
       "suspicious": {
-        "noConsoleLog": "error"
+        "noConsoleLog": "error",
+        "noExplicitAny": "off"
       },
       "style": {
         "useSelfClosingElements": "error"

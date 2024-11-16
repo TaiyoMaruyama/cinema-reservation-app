@@ -1,6 +1,6 @@
-import Room from '@/components/reservation/Room'
+import TopPage from '@/components/top/TopPage'
 
 const HOME = () => {
-  return <Room />
+  return <TopPage />
 }
 export default HOME
