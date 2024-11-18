@@ -19,7 +19,7 @@ Nest.js
 Docker
 
 **その他**<br>
-Biome, husky, tailwind css
+Biome, husky, tailwind css, Lucide
 
 
 ## やりたいこと
