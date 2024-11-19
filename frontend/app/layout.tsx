@@ -22,7 +22,9 @@ export default function RootLayout({
           userName='MT'
           setUserName={() => alert('setName')}
         />
-        <div className='max-w-6xl w-full px-4 mx-auto'>{children}</div>
+        <div className='max-w-6xl w-full min-h-screen px-4 mx-auto'>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
